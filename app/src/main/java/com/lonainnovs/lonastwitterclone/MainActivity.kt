@@ -23,8 +23,15 @@ class MainActivity : AppCompatActivity() {
         var tweet3= Tweet("","","44","wanda@liaslisa","Ever thought of being a programmer","",
         "","12","","1120",""
             )
+        var tweet4= Tweet("","","28","anenaz@anenaBeatrice","This is a twitter clone made by Lona an upcoming developer",
+        "","","45","","45",""
+        )
+        var tweet5=Tweet("","","56","misho@mishominions","Kotlin groovy is bae",
+            "","","78","","700",""
+            )
 
-        var listTweets = listOf<Tweet>(tweet1, tweet2,tweet3)
+
+        var listTweets = listOf<Tweet>(tweet1, tweet2,tweet3,tweet4,tweet5)
         var tweetAdapter = TweetsAdapter(listTweets)
         binding.rvTweets.layoutManager = LinearLayoutManager(this)
         binding.rvTweets.adapter = tweetAdapter
